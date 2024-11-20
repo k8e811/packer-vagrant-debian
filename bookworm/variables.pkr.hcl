@@ -11,18 +11,18 @@ variables {
     debug                 = false
     domain                = "vagrant.local"
     hostname              = "debian"
-    os_version            = "11.0.0"
-    password              = "bullseye"
-    username              = "bullseye"
+    os_version            = "12.8.0"
+    password              = "bookworm"
+    username              = "bookworm"
     _boot_wait_sec        = 10
     _headless             = true
     _os_arch              = "amd64"
-    _os_codename          = "bullseye"
+    _os_codename          = "bookworm"
     _os_type_vbox         = "Debian_64"
     _os_type_vmware       = "debian10_64Guest"
     _ssh_port             = 22
     _ssh_wait_timeout_sec = 3600
-    _system_memory_mb     = 512
+    _system_memory_mb     = 2048
     _timezone             = "UTC"
 }
 
