@@ -145,7 +145,7 @@ sed -i \
     -e '/^GRUB_TIMEOUT=/s/=.*/=1/' \
     -e 's/GRUB_CMDLINE_LINUX_DEFAULT="\(.*\)"/GRUB_CMDLINE_LINUX_DEFAULT="\1 cgroup_enable=memory"/' \
     /etc/default/grub
-grub2-mkconfig --output=/boot/grub2/grub.cfg
+grub-mkconfig --output=/boot/grub/grub.cfg
 
 
 # ----- System cleanup
