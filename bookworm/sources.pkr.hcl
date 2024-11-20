@@ -71,8 +71,9 @@ source "vmware-iso" "vmware" {
         "ehci.present"      = "FALSE"
         "ethernet0.pciSlotNumber" = "32"
         "floppy0.present"   = "FALSE"
-        "serial0.present"   = "FALSE"
-        "virtualHW.version" = "14"
+# These cause a warning on validate
+#        "serial0.present"   = "FALSE"
+#        "virtualHW.version" = "14"
     }
     vmx_remove_ethernet_interfaces = "true"
 }
